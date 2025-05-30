@@ -12,6 +12,7 @@ import 'package:meu_app/stateful/Loja.dart';
 import 'package:meu_app/stateful/RandomNumber.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
+import 'package:meu_app/widgetLayout/LayoutApp.dart';
 
 /* void main() {
   runApp(Container(
@@ -63,9 +64,11 @@ import 'package:meu_app/stateless/User.dart';
  
 void main(){
 
-  if(Platform.isAndroid){
+ /*  if(Platform.isAndroid){
     runApp(MyMaterial());
   } else {
     runApp(MyCupertino());
-  }
+  } */
+
+ runApp(Layoutapp());
 }
