@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:meu_app/Botao.dart';
+import 'package:meu_app/Debug.dart';
 import 'package:meu_app/cupertino/MyCupertino.dart';
 import 'package:meu_app/exercicios/ex1.dart';
 import 'package:meu_app/inherited/Userinfos.dart';
@@ -12,6 +13,8 @@ import 'package:meu_app/stateful/Loja.dart';
 import 'package:meu_app/stateful/RandomNumber.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
+import 'package:meu_app/usandoAssets/Fonts.dart';
+import 'package:meu_app/usandoAssets/Imagem.dart';
 import 'package:meu_app/widgetLayout/LayoutApp.dart';
 
 /* void main() {
@@ -70,5 +73,5 @@ void main(){
     runApp(MyCupertino());
   } */
 
- runApp(Layoutapp());
+ runApp(const MaterialApp(home: Debug(numeroMaximo: 10),));
 }
