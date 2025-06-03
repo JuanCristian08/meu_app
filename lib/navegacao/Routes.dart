@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meu_app/material_widget/my_material.dart';
+import 'package:meu_app/navegacao/Tela1.dart';
+import 'package:meu_app/navegacao/Tela2.dart';
+import 'package:meu_app/navegacao/Tela3.dart';
 
 class Routes extends StatelessWidget {
   const Routes({super.key});
@@ -7,7 +10,12 @@ class Routes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Tela1(),
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => const Tela1(),
+        '/tela2' : (context) => const Tela2(),
+        '/tela3' : (context) => const Tela3()
+      },
     );
   }
 }

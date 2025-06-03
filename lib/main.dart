@@ -7,6 +7,8 @@ import 'package:meu_app/cupertino/MyCupertino.dart';
 import 'package:meu_app/exercicios/ex1.dart';
 import 'package:meu_app/inherited/Userinfos.dart';
 import 'package:meu_app/material_widget/my_material.dart';
+import 'package:meu_app/navegacao/Routes.dart';
+import 'package:meu_app/navegacao/Tela1.dart';
 import 'package:meu_app/stateful/Contador.dart';
 import 'package:meu_app/stateful/Darkmode.dart';
 import 'package:meu_app/stateful/Loja.dart';
@@ -72,6 +74,5 @@ void main(){
   } else {
     runApp(MyCupertino());
   } */
-
- runApp(const MaterialApp(home: Debug(numeroMaximo: 10),));
+ runApp(Routes());
 }
